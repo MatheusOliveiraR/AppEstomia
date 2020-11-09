@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefbec"
+    tools:context=".passo2">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/fundo_passo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView94"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Quando esvaziar a bolsa coletora?"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/letras"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt1"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Quando o conteúdo alcançar menos da metade do tamanho da bolsa (1/3 da capacidade)."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView94" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt2"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Antes de dormir, pescar, ir para roça ou para lavoura."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt1"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt3"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Os clipes de fechamento da bolsa podem ser lavados com água e sabonete e deixar secar ao ar livre.​"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt2"
+                app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt4"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Quando você sair de casa, leve todo o seu material necessário caso você precise esvaziar ou trocar a bolsa coletora: bolsa nova com a base adesiva já cortada, clipe, saco de lixo, garrafinha com água, sabonete e pano macio ou toalha de papel.​"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt3"
+                app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt5"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Quando você viajar pelo rio (de canoa, barco, ou lancha) evite jogar o conteúdo da bolsa nas águas."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt4"
+                app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+            <ImageButton
+                android:id="@+id/diminui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diminui"
+                app:layout_constraintEnd_toEndOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <ImageButton
+                android:id="@+id/aumenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aumenta"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Tamanho do Texto"
+                android:textColor="@color/letras"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

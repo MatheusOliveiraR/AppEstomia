@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefbec"
+    tools:context=".menu">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="#f2d0b1" />
+
+    <TextView
+        android:id="@+id/BemVindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="EstomAM"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/noti"
+                android:layout_width="161dp"
+                android:layout_height="143dp"
+                android:layout_marginStart="184dp"
+                android:background="@drawable/btn_menu"
+                android:elevation="9dp"
+                app:layout_constraintBottom_toBottomOf="@+id/perfil"
+                app:layout_constraintEnd_toEndOf="@+id/reco"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/reco"
+                app:layout_constraintTop_toTopOf="@+id/perfil"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="0dp"
+                android:layout_height="91dp"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/passo"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/passo"
+                app:layout_constraintTop_toTopOf="@+id/passo"
+                app:srcCompat="@drawable/passos" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                android:text="Como trocar a bolsa"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/passo"
+                app:layout_constraintEnd_toEndOf="@+id/passo"
+                app:layout_constraintStart_toStartOf="@+id/passo"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                android:text="Notificação"
+                android:textColor="#F000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/noti"
+                app:layout_constraintEnd_toEndOf="@+id/noti"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="@+id/noti"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="5dp"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/button"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button"
+                app:layout_constraintTop_toTopOf="@+id/button"
+                app:srcCompat="@drawable/sobre" />
+
+            <ImageButton
+                android:id="@+id/passo"
+                android:layout_width="161dp"
+                android:layout_height="143dp"
+                android:layout_marginTop="172dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/btn_menu"
+                android:elevation="9dp"
+                app:layout_constraintEnd_toEndOf="@+id/oqueEestomia"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/oqueEestomia"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                android:text="Informações"
+                android:textColor="#F000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="@+id/button"
+                app:layout_constraintStart_toStartOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+            <ImageButton
+                android:id="@+id/button"
+                android:layout_width="161dp"
+                android:layout_height="143dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_menu"
+                android:elevation="9dp"
+                app:layout_constraintEnd_toStartOf="@+id/noti"
+                app:layout_constraintStart_toEndOf="@+id/perfil"
+                app:layout_constraintTop_toBottomOf="@+id/perfil" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                android:text="Recomendação"
+                android:textColor="#F000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/reco"
+                app:layout_constraintEnd_toEndOf="@+id/reco"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="@+id/reco"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                android:text="Perfil do usuário"
+                android:textColor="#F000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/perfil"
+                app:layout_constraintEnd_toEndOf="@+id/perfil"
+                app:layout_constraintStart_toStartOf="@+id/perfil"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <ImageButton
+                android:id="@+id/perfil"
+                android:layout_width="161dp"
+                android:layout_height="143dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="188dp"
+                android:background="@drawable/btn_menu"
+                android:elevation="9dp"
+                app:layout_constraintEnd_toEndOf="@+id/passo"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/passo"
+                app:layout_constraintTop_toBottomOf="@+id/passo" />
+
+            <ImageButton
+                android:id="@+id/reco"
+                android:layout_width="161dp"
+                android:layout_height="143dp"
+                android:layout_marginStart="52dp"
+                android:background="@drawable/btn_menu"
+                android:elevation="9dp"
+                app:layout_constraintBottom_toBottomOf="@+id/passo"
+                app:layout_constraintEnd_toEndOf="@+id/button22"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/button22"
+                app:layout_constraintTop_toTopOf="@+id/passo"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="91dp"
+                android:elevation="9dp"
+                app:layout_constraintEnd_toEndOf="@+id/perfil"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/perfil"
+                app:layout_constraintTop_toTopOf="@+id/perfil"
+                app:srcCompat="@drawable/profile"
+                tools:targetApi="m" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="91dp"
+                android:elevation="9dp"
+                app:layout_constraintEnd_toEndOf="@+id/noti"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/noti"
+                app:layout_constraintTop_toTopOf="@+id/noti"
+                app:srcCompat="@drawable/copos" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="0dp"
+                android:layout_height="91dp"
+                android:elevation="9dp"
+                app:layout_constraintEnd_toEndOf="@+id/reco"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/reco"
+                app:layout_constraintTop_toTopOf="@+id/reco"
+                app:srcCompat="@drawable/reco" />
+
+            <ImageButton
+                android:id="@+id/button22"
+                android:layout_width="161dp"
+                android:layout_height="143dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/btn_menu"
+                android:elevation="9dp"
+                app:layout_constraintBottom_toBottomOf="@+id/oqueEestomia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/oqueEestomia"
+                app:layout_constraintTop_toTopOf="@+id/oqueEestomia"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/oqueEestomia"
+                android:layout_width="161dp"
+                android:layout_height="143dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_menu"
+                android:elevation="9dp"
+                app:layout_constraintBottom_toTopOf="@+id/passo"
+                app:layout_constraintEnd_toStartOf="@+id/button22"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="9dp"
+                android:text="O que é a estomia?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/oqueEestomia"
+                app:layout_constraintEnd_toEndOf="@+id/oqueEestomia"
+                app:layout_constraintStart_toStartOf="@+id/oqueEestomia"
+                app:layout_constraintTop_toBottomOf="@+id/imageView63" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                android:text="O que é a bolsa"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/button22"
+                app:layout_constraintEnd_toEndOf="@+id/button22"
+                app:layout_constraintStart_toStartOf="@+id/button22"
+                app:layout_constraintTop_toBottomOf="@+id/imageView57" />
+
+            <ImageView
+                android:id="@+id/imageView57"
+                android:layout_width="0dp"
+                android:layout_height="91dp"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/button22"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button22"
+                app:layout_constraintTop_toTopOf="@+id/button22"
+                app:srcCompat="@drawable/bolsa" />
+
+            <ImageView
+                android:id="@+id/imageView63"
+                android:layout_width="0dp"
+                android:layout_height="91dp"
+                android:elevation="9dp"
+                app:layout_constraintEnd_toEndOf="@+id/oqueEestomia"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/oqueEestomia"
+                app:layout_constraintTop_toTopOf="@+id/oqueEestomia"
+                app:srcCompat="@drawable/estomia" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

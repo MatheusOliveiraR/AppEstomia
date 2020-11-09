@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="420dp"
+    android:layout_gravity="center"
+    android:background="@color/bra"
+    tools:context=".passo2">
+
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/quit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:fadeScrollbars="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não precisa usar soro fisiológico, gaze ou luvas."
+                android:textColor="#F000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView14"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintHorizontal_bias="0.235"
+                app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Se você usar um produto chamado pasta (que serve para ajudar a fixar melhor a bolsa na sua pele), tire a pasta usando um pano macio ou toalha de papel seca, sem esfregar a sua pele. Não precisa tirar toda a pasta da pele. ​"
+                android:textColor="#F000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Evite usar sabonetes com óleo ou lenços de bebê pois podem dificultar a fixação da bolsa na pele.​"
+                android:textColor="#F000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintHorizontal_bias="0.23"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="A estomia pode sangrar um pouco durante a limpeza pois possui pequenos vasos sanguíneos, se isso ocorrer, pressione com cuidado o local e se o sangramento não para, procure atendimento com profissional da saúde.​"
+                android:textColor="#F000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="O pano usado para secar a pele pode ser lavado junto com a roupa de casa.​"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Você pode aparar o excesso de pelos ao redor da estomia usando uma tesoura pequena de pontas arredondadas. ​"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Após a limpeza você pode aplicar um produto protetor na pele ao redor da estomia (tipo creme, spray ou em forma de lenço) para proteção contra irritações e coceiras."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

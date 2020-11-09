@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="2dp"
+    android:background="@color/fundo"
+    tools:context=".cadastro">
+
+
+    <Button
+        android:id="@+id/proximo"
+        android:layout_width="317dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/btn"
+        android:text="Finalizar cadastro"
+        android:textColor="@color/bra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/guideline5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/perfilzin"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp"
+        android:background="@drawable/background"
+        app:civ_border_overlay="true"
+        app:civ_circle_background_color="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/NomeView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textView43"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <EditText
+        android:id="@+id/NomeView"
+        android:layout_width="295dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/btn_cadastro"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="Nome e sobrenome"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PesoView"
+        android:layout_width="295dp"
+        android:elevation="10dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_cadastro"
+        android:ems="10"
+        android:hint="Peso"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/IdadeView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/IdadeView"
+        app:layout_constraintTop_toBottomOf="@+id/IdadeView" />
+
+    <EditText
+        android:id="@+id/IdadeView"
+        android:layout_width="295dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_cadastro"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="Data de nascimento"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:onClick="abrirCalendario"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/NomeView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/NomeView"
+        app:layout_constraintTop_toBottomOf="@+id/NomeView" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Informação do Usuário"
+        android:textColor="@color/letras"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeValido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira um nome"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/NomeView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/NomeView"
+        app:layout_constraintTop_toBottomOf="@+id/perfilzin"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/idadeValido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira sua idade"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/IdadeView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/IdadeView"
+        app:layout_constraintTop_toBottomOf="@+id/NomeView"
+        app:layout_constraintVertical_bias="0.734" />
+
+    <TextView
+        android:id="@+id/pesoValido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira seu peso"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/PesoView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PesoView"
+        app:layout_constraintTop_toBottomOf="@+id/IdadeView" />
+
+
+    <ImageButton
+        android:id="@+id/galeria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_gallery"
+        app:layout_constraintBottom_toBottomOf="@+id/perfilzin"
+        app:layout_constraintEnd_toEndOf="@+id/perfilzin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/perfilzin"
+        app:layout_constraintTop_toTopOf="@+id/perfilzin"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/button26"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/transparente"
+        android:elevation="20dp"
+        android:onClick="abrirCalendario"
+        app:layout_constraintBottom_toBottomOf="@+id/IdadeView"
+        app:layout_constraintEnd_toEndOf="@+id/IdadeView"
+        app:layout_constraintStart_toStartOf="@+id/IdadeView"
+        app:layout_constraintTop_toTopOf="@+id/IdadeView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

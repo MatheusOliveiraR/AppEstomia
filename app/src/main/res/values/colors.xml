@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f2d0b1</color>
+    <color name="colorPrimaryDark">#f2d0b1</color>
+    <color name="colorAccent">#f2d0b1</color>
+    <color name="verde">#59BBAA</color>
+    <color name="black">#000000</color>
+    <color name="bra">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="azul">#59BBAA</color>
+    <color name="fundo">#f8f4dd</color>
+    <color name="letras">#643f1c</color>
+    fefbec
+    <color name="black_overlay">#66000000</color>
+</resources>

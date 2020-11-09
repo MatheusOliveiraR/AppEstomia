@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".Saskia">
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voltar"
+        app:srcCompat="@drawable/fundo_passo" />
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageView
+        android:id="@+id/SaskiaImagem"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/saskia"
+        app:layout_constraintEnd_toEndOf="@+id/imageView62"
+        app:layout_constraintStart_toStartOf="@+id/imageView62"
+        app:layout_constraintTop_toTopOf="@+id/imageView62" />
+
+    <TextView
+        android:id="@+id/SaskiaNome"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sáskia Sampaio"
+        android:textAlignment="center"
+        android:textColor="@color/letras"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView62"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/imageView62"
+        app:layout_constraintTop_toBottomOf="@+id/SaskiaImagem" />
+
+    <TextView
+        android:id="@+id/SaskiaEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="saskiasampaio@ufam.edu.br"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/SaskiaNome"
+        app:layout_constraintStart_toStartOf="@+id/SaskiaNome"
+        app:layout_constraintTop_toBottomOf="@+id/SaskiaNome" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/SaskiaTexto"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Doutora em Ciências pela Universidade de São Paulo (2017). Desde 2011 é Professora Adjunto da Escola de Enfermagem de  Manaus da Universidade Federal do Amazonas. Tem experiência no ensino nas disciplinas de Sistematização da Assistência de Enfermagem e Semiologia e Semiotécnica. Desenvolve pesquisas nas áreas de: Processo de Enfermagem, Teorias de Enfermagem, Raciocínio Clínico, Pensamento Crítico, Adaptação e Validação de Instrumentos de Avaliação em Saúde e Saúde do Adulto."
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView62"
+        app:layout_constraintEnd_toEndOf="@+id/imageView62"
+        app:layout_constraintStart_toStartOf="@+id/imageView62"
+        app:layout_constraintTop_toBottomOf="@+id/SaskiaEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

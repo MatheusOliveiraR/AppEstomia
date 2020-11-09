@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefbec"
+    tools:context=".colocar1peca">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fundo_passo" />
+
+    <ImageButton
+        android:elevation="10dp"
+        android:id="@+id/dicas"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:background="@drawable/dicas2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:elevation="10dp"
+                android:id="@+id/sliderColocar"
+                android:layout_width="295dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/sliderColocar2"
+                android:elevation="10dp"
+                android:layout_width="295dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colocando a bolsa de uma peça"
+                android:textAlignment="center"
+                android:textColor="@color/letras"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 1"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txt2"
+                app:layout_constraintTop_toBottomOf="@+id/sliderColocar" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt2"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Medir o tamanho da estomia com o medidor (régua própria que vem junto com a bolsa) e desenhar na base adesiva da bolsa."
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 2"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txt2"
+                app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt4"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Recortar a parte adesiva da bolsa com uma tesoura sem ponta, de acordo com o tamanho que você mediu."
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/txt2"
+                app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 3"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txt4"
+                app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt6"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Retirar o papel da parte adesiva e colar  a bolsa (fechada com o clipe) de baixo para cima, procurando encaixá-la na estomia. "
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/txt5"
+                app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 4"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txt6"
+                app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt8"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Fazer movimentos firmes e circulares sobre a parte adesiva já colada na pele com o dedo indicador, do centro para as bordas. "
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/txt7"
+                app:layout_constraintTop_toBottomOf="@+id/txt7" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="300dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt8"
+                app:srcCompat="@drawable/divisao_cinza" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Colocando a bolsa de duas peças"
+                android:textColor="@color/letras"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView27"
+                app:layout_constraintStart_toStartOf="@+id/textView27"
+                app:layout_constraintTop_toBottomOf="@+id/imageView44" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 1"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView66"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt1"
+                app:layout_constraintTop_toBottomOf="@+id/sliderColocar2" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt2"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Medir o tamanho da estomia com o medidor (régua própria) e desenhar na placa adesiva. "
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/txtt1"
+                app:layout_constraintTop_toBottomOf="@+id/txtt1" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 2"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtt2"
+                app:layout_constraintTop_toBottomOf="@+id/txtt2" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt4"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Recortar a parte adesiva da placa com uma tesoura sem ponta, de acordo com o tamanho que você mediu ou moldar a placa adesiva com as mãos, se você estiver usando uma placa não recortável."
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtt3"
+                app:layout_constraintTop_toBottomOf="@+id/txtt3" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 3"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtt4"
+                app:layout_constraintTop_toBottomOf="@+id/txtt4" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt6"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Retirar o papel que protege a placa adesiva e segure-a com as duas mãos."
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/txtt5"
+                app:layout_constraintTop_toBottomOf="@+id/txtt5" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 4"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/txtt6"
+                app:layout_constraintTop_toBottomOf="@id/txtt6" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt8"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Adaptar a placa de baixo para cima, parte por parte, procurando encaixá-la no estoma, do centro para a extremidade. "
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/txtt7"
+                app:layout_constraintTop_toBottomOf="@id/txtt7" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 5"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/txtt8"
+                app:layout_constraintTop_toBottomOf="@id/txtt8" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt10"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Encaixar a bolsa na placa."
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/txtt9"
+                app:layout_constraintTop_toBottomOf="@id/txtt9" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 6"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/txtt10"
+                app:layout_constraintTop_toBottomOf="@id/txtt10" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt12"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Retirar o ar de dentro da bolsa e coloque o clipe para fechar. "
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/txtt11"
+                app:layout_constraintTop_toBottomOf="@id/txtt11" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 7"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/txtt12"
+                app:layout_constraintTop_toBottomOf="@id/txtt12" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Se você usar o cinto, coloque-o por último."
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/txtt13"
+                app:layout_constraintTop_toBottomOf="@id/txtt13" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/aumenta3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aumenta"
+                app:layout_constraintStart_toStartOf="@+id/textView70"
+                app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/diminui3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diminui"
+                app:layout_constraintEnd_toEndOf="@+id/textView70"
+                app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="20dp"
+                android:text="Tamanho do Texto"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/txtt14"
+                app:layout_constraintTop_toBottomOf="@id/txtt14" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

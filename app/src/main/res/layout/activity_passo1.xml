@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefbec"
+    tools:context=".passo1">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fundo_passo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ScrollView
+        android:id="@+id/sv2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="295dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:text="Existem dois tipos de estomia intestinal:"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+            <TextView
+                android:id="@+id/textView98"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/txt15"
+                app:layout_constraintTop_toTopOf="@+id/txt15" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt15"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Colostomia: a abertura é formada através do cólon (uma parte do intestino grosso). Apresenta saída fezes moles ou mais duras."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt16"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Ileostomia: é formada através do íleo (uma parte do intestino delgado). Apresenta saída de fezes mais líquidas."
+                android:textAlignment="center"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt15"
+                app:layout_constraintStart_toStartOf="@+id/txt15"
+                app:layout_constraintTop_toBottomOf="@+id/txt15" />
+
+            <TextView
+                android:id="@+id/textView99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/txt16"
+                app:layout_constraintStart_toStartOf="@+id/textView98"
+                app:layout_constraintTop_toTopOf="@+id/txt16" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tipos de estomia"
+                android:textColor="@color/letras"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="Tamanho do Texto"
+                android:textColor="@color/letras"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt16" />
+
+            <ImageButton
+                android:id="@+id/aumenta"
+                android:layout_width="26dp"
+                android:layout_height="32dp"
+                android:background="@drawable/aumenta"
+                app:layout_constraintStart_toStartOf="@+id/textView33"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <ImageButton
+                android:id="@+id/diminui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diminui"
+                app:layout_constraintEnd_toEndOf="@+id/textView33"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

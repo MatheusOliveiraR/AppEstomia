@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.estomia20">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".colocar_bolsa_video"></activity>
+        <activity android:name=".como_limpar_video" />
+        <activity android:name=".passotirarbolsaVideo" />
+        <activity android:name=".SelecionarPassoVideo" />
+        <activity android:name=".SelecionarImagemOuVideo" />
+        <activity android:name=".Pessoa.passo_a_passo_versao2" />
+        <activity android:name=".Matheus" />
+        <activity android:name=".Will" />
+        <activity android:name=".Saskia" />
+        <activity android:name=".Nariane" />
+        <activity android:name=".Aline" />
+        <activity android:name=".envolvidos" />
+        <activity android:name=".universidades" />
+        <activity android:name=".direitosAutorais" />
+        <activity android:name=".calendario" />
+        <activity android:name=".selecionarReco2" />
+        <activity android:name=".tiposEstomia" />
+        <activity android:name=".selecionar" />
+        <activity android:name=".popupTirar" />
+        <activity android:name=".passo1particionado" />
+        <activity android:name=".teste3" />
+        <activity android:name=".teste2" />
+        <activity android:name=".teste" />
+        <activity android:name=".sobre" />
+        <activity android:name=".popup" />
+        <activity android:name=".passoversao2" />
+        <activity android:name=".colocarAlerta" />
+        <activity android:name=".limparAviso" />
+        <activity android:name=".passotirarbolsa" />
+        <activity android:name=".atencaoTirar" />
+        <activity android:name=".btnBanheiro" />
+        <activity android:name=".intimidade" />
+        <activity android:name=".selecionarReco" />
+        <activity android:name=".selecionarPasso" />
+        <activity android:name=".cadastro" />
+        <activity android:name=".alimentacao" />
+        <activity android:name=".quandoEsvaziar" />
+        <activity android:name=".comoEsvaziar" />
+        <activity android:name=".trocar" />
+        <activity android:name=".banho" />
+        <activity android:name=".descarte" />
+        <activity android:name=".orientacaoSer" />
+        <activity android:name=".colocar2peca" />
+        <activity android:name=".colocar1peca" />
+        <activity android:name=".comoLimpar" />
+        <activity android:name=".bolsa2peca" />
+        <activity android:name=".bolsa1peca" />
+        <activity android:name=".passo2" />
+        <activity android:name=".passo1" />
+        <activity android:name=".notificacao" />
+        <activity android:name=".menu" />
+        <activity android:name=".PerfilActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Alarme"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

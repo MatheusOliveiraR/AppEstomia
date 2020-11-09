@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefbec"
+    tools:context=".passo2">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fundo_passo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:text="Como tomar banho com a bolsa?"
+                android:textAlignment="center"
+                android:textColor="@color/letras"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt1"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Você pode tomar banho todos os dias."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt2"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Você pode tomar banho ou nadar no rio/igarapé com a sua bolsa desde que a bolsa esteja bem fixada na sua pele antes de entrar na água.​"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt1"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt3"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Esvazie sempre a bolsa antes de tomar banho ou entrar na água. Não precisa cobrir a bolsa para tomar banho pois elas são resistentes à água."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt2"
+                app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt4"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Se você ficar muito tempo na água, a sua bolsa pode começar a se soltar da pele. Neste caso, seque a borda da base adesiva e a bolsa com uma pano macio ou toalha de papel."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txt3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt3"
+                app:layout_constraintTop_toBottomOf="@+id/txt3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/aumenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aumenta"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <ImageButton
+                android:id="@+id/diminui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diminui"
+                app:layout_constraintEnd_toEndOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Tamanho do Texto"
+                android:textColor="@color/letras"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

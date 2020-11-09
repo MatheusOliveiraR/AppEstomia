@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".envolvidos">
+
+    <ImageView
+        android:id="@+id/imageView64"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:background="#f2d0b1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colaboradores"
+        android:textColor="@color/letras"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView64"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView64"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/Aline"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/btn_sobre" />
+
+            <ImageView
+                android:id="@+id/imageView65"
+                android:layout_width="95dp"
+                android:layout_height="0dp"
+                android:background="@drawable/aline"
+                android:elevation="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/Aline"
+                app:layout_constraintStart_toStartOf="@+id/Aline"
+                app:layout_constraintTop_toTopOf="@+id/Aline"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/Nariane"
+                android:elevation="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/Matheus"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/Matheus"
+                app:layout_constraintStart_toStartOf="@+id/Matheus"
+                app:layout_constraintTop_toBottomOf="@+id/Matheus"
+                app:srcCompat="@drawable/btn_sobre" />
+
+            <ImageView
+                android:id="@+id/imageView69"
+                android:elevation="10dp"
+                android:layout_width="95dp"
+                android:layout_height="100dp"
+                android:background="@drawable/nari"
+                app:layout_constraintBottom_toBottomOf="@+id/Nariane"
+                app:layout_constraintEnd_toEndOf="@+id/Nariane"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Nariane"
+                app:layout_constraintTop_toTopOf="@+id/Nariane" />
+
+            <ImageView
+                android:id="@+id/Saskia"
+                android:elevation="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/Nariane"
+                app:layout_constraintStart_toStartOf="@+id/Nariane"
+                app:layout_constraintTop_toBottomOf="@+id/Nariane"
+                app:srcCompat="@drawable/btn_sobre" />
+
+            <ImageView
+                android:id="@+id/Will"
+                android:elevation="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/Saskia"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toEndOf="@+id/Saskia"
+                app:layout_constraintStart_toStartOf="@+id/Saskia"
+                app:layout_constraintTop_toBottomOf="@+id/Saskia"
+                app:srcCompat="@drawable/btn_sobre" />
+
+            <ImageView
+                android:id="@+id/Matheus"
+                android:elevation="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/Aline"
+                app:layout_constraintStart_toStartOf="@+id/Aline"
+                app:layout_constraintTop_toBottomOf="@+id/Aline"
+                app:srcCompat="@drawable/btn_sobre" />
+
+            <ImageView
+                android:id="@+id/imageView76"
+                android:elevation="10dp"
+                android:layout_width="95dp"
+                android:layout_height="0dp"
+                android:background="@drawable/saskia"
+                app:layout_constraintBottom_toBottomOf="@+id/Saskia"
+                app:layout_constraintEnd_toEndOf="@+id/Saskia"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Saskia"
+                app:layout_constraintTop_toTopOf="@+id/Saskia" />
+
+            <ImageView
+                android:id="@+id/imageView77"
+                android:elevation="10dp"
+                android:layout_width="95dp"
+                android:layout_height="0dp"
+                android:background="@drawable/will"
+                app:layout_constraintBottom_toBottomOf="@+id/Will"
+                app:layout_constraintEnd_toEndOf="@+id/Will"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Will"
+                app:layout_constraintTop_toTopOf="@+id/Will" />
+
+            <ImageView
+                android:id="@+id/imageView78"
+                android:elevation="10dp"
+                android:layout_width="95dp"
+                android:layout_height="0dp"
+                android:background="@drawable/matheus"
+                app:layout_constraintBottom_toBottomOf="@+id/Matheus"
+                app:layout_constraintEnd_toEndOf="@+id/Matheus"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Matheus"
+                app:layout_constraintTop_toTopOf="@+id/Matheus" />
+
+            <TextView
+                android:id="@+id/textView112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:text="Aline Albuquerque"
+                android:textColor="@color/letras"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Aline"
+                app:layout_constraintEnd_toEndOf="@+id/Aline"
+                app:layout_constraintStart_toEndOf="@+id/imageView65"
+                app:layout_constraintTop_toTopOf="@+id/Aline" />
+
+            <TextView
+                android:id="@+id/textView113"
+                android:elevation="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nariani Galvão"
+                android:textColor="@color/letras"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Nariane"
+                app:layout_constraintEnd_toEndOf="@+id/Nariane"
+                app:layout_constraintStart_toEndOf="@+id/imageView69"
+                app:layout_constraintTop_toTopOf="@+id/Nariane" />
+
+            <TextView
+                android:id="@+id/textView114"
+                android:elevation="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sáskia Sampaio"
+                android:textColor="@color/letras"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Saskia"
+                app:layout_constraintEnd_toEndOf="@+id/Saskia"
+                app:layout_constraintStart_toEndOf="@+id/imageView76"
+                app:layout_constraintTop_toTopOf="@+id/Saskia" />
+
+            <TextView
+                android:id="@+id/textView115"
+                android:elevation="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Williamson Silva"
+                android:textColor="@color/letras"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Will"
+                app:layout_constraintEnd_toEndOf="@+id/Will"
+                app:layout_constraintStart_toEndOf="@+id/imageView77"
+                app:layout_constraintTop_toTopOf="@+id/Will" />
+
+            <TextView
+                android:id="@+id/textView116"
+                android:elevation="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matheus Ribeiro"
+                android:textColor="@color/letras"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Matheus"
+                app:layout_constraintEnd_toEndOf="@+id/Matheus"
+                app:layout_constraintStart_toEndOf="@+id/imageView78"
+                app:layout_constraintTop_toTopOf="@+id/Matheus" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

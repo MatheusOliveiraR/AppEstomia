@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde"
+    tools:context=".selecionarPasso">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="322dp"
+        android:layout_height="530dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:srcCompat="@drawable/btn_branco" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Seleção de Passo"
+        android:textColor="@color/bra"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnOq"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/btnpassov2"
+        android:stateListAnimator="@null"
+        android:text="O que é Estomia Intestinal?"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnColetora"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/btnpassov2"
+        android:stateListAnimator="@null"
+        android:text="O que é uma Bolsa Coletora?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/btn1peca"
+        android:layout_width="131dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnmenu"
+        android:stateListAnimator="@null"
+        android:text="Como tirar a Bolsa                 Uma Peça"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/scrolloqueE" />
+
+    <Button
+        android:id="@+id/btn2peca"
+        android:layout_width="131dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnmenu"
+        android:stateListAnimator="@null"
+        android:text="Como tirar a Bolsa               Duas Peças"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/scrolloqueE" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnmenu"
+        android:stateListAnimator="@null"
+        android:text="Como limpar a pele ao redor da estomia?"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/scrollVideoDois"
+        />
+
+    <Button
+        android:id="@+id/colocar1"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnmenu"
+        android:stateListAnimator="@null"
+        android:text="Como colocar a bolsa coletora Uma Peça"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/scrollComoLimpar" />
+
+    <Button
+        android:id="@+id/colocar2"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnmenu"
+        android:stateListAnimator="@null"
+        android:text="Como colocar a bolsa coletora Duas Peças"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/scrollComoLimpar" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="288dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/btnOq">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnpassov2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btnpassov2"
+                android:text="Texto" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpassov2"
+                android:text="Vídeo" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/mostrar1"
+        android:layout_width="36dp"
+        android:layout_height="0dp"
+        android:background="@drawable/flecha_baixo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOq"
+        app:layout_constraintEnd_toEndOf="@+id/btnOq"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnOq"
+        app:layout_constraintTop_toTopOf="@+id/btnOq" />
+
+    <Button
+        android:id="@+id/mostrar2"
+        android:layout_width="37dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/flecha_baixo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnColetora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/btnColetora"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:id="@+id/scrolloqueE"
+        android:layout_width="289dp"
+        android:layout_height="105dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnColetora"
+        app:layout_constraintStart_toStartOf="@+id/btnColetora"
+        app:layout_constraintTop_toBottomOf="@+id/btnColetora">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpassov2"
+                android:text="Vídeo" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btnpassov2"
+                android:text="Texto" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollVideoDois"
+        android:layout_width="282dp"
+        android:layout_height="103dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/btn1peca">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpassov2"
+                android:text="Vídeo" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btnpassov2"
+                android:text="Texto" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollComoLimpar"
+        android:layout_width="289dp"
+        android:layout_height="105dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpassov2"
+                android:text="Vídeo" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btnpassov2"
+                android:text="Texto" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/mostrarTirar"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:background="@drawable/flecha_baixo"
+        app:layout_constraintBottom_toBottomOf="@+id/btn1peca"
+        app:layout_constraintEnd_toEndOf="@+id/btn1peca"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn1peca"
+        app:layout_constraintTop_toTopOf="@+id/btn1peca"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <ImageButton
+        android:id="@+id/mostrarTirar2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:background="@drawable/flecha_baixo"
+        app:layout_constraintBottom_toBottomOf="@+id/btn2peca"
+        app:layout_constraintEnd_toEndOf="@+id/btn2peca"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn2peca"
+        app:layout_constraintTop_toTopOf="@+id/btn2peca"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <ImageButton
+        android:id="@+id/mostrarLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flecha_baixo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLimpar"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/btnLimpar" />
+
+    <ImageButton
+        android:id="@+id/mostrarColocar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/flecha_baixo"
+        app:layout_constraintBottom_toBottomOf="@+id/colocar1"
+        app:layout_constraintEnd_toEndOf="@+id/colocar1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/colocar1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/mostrarColocar2"
+        android:layout_width="21dp"
+        android:layout_height="31dp"
+        android:background="@drawable/flecha_baixo"
+        app:layout_constraintBottom_toBottomOf="@+id/colocar2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/colocar2"
+        app:layout_constraintTop_toTopOf="@+id/colocar2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:id="@+id/scrollColocar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/colocar1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpassov2"
+                android:text="Vídeo" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btnpassov2"
+                android:text="Texto" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollColocarDois"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/colocar2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpassov2"
+                android:text="Vídeo" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btnpassov2"
+                android:text="Texto" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefbec"
+    tools:context=".passo2">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/fundo_passo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt1"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Esvazie sua bolsa no banheiro (vaso sanitário ou fossa da sua casa)."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView93" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt2"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Para esvaziar a bolsa, fique em pé ou sentado em uma cadeira bem ao lado do vaso sanitário ou fossa e esvazie o conteúdo neste local. "
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt1"
+                app:layout_constraintStart_toStartOf="@+id/txt1"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt3"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Se você usar a bolsa com duas peças pode tirar a parte coletora para esvaziá-la e depois colocar a bolsa limpa."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt2"
+                app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt4"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Após esvaziar a bolsa, lave a parte de dentro da bolsa com água (use uma garrafinha com água ou cuia com água)."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt3"
+                app:layout_constraintStart_toStartOf="@+id/txt3"
+                app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt5"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Se a parte inferior da bolsa ficar suja, lave com água e sabonete."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt4"
+                app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt6"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Para secar a bolsa, use um pano macio ou papel toalha."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt5"
+                app:layout_constraintStart_toStartOf="@+id/txt5"
+                app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt7"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Dê a descarga do vaso sanitário ou se usar fossa, coloque cal ou serragem para evitar mau cheiro."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt6"
+                app:layout_constraintStart_toStartOf="@+id/txt6"
+                app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt8"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Lave as mãos com água e sabonete antes e após esvaziar a sua bolsa."
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt7"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="@+id/txt7"
+                app:layout_constraintTop_toBottomOf="@+id/txt7" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView93"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:text="Como esvaziar a bolsa?"
+                android:textColor="@color/letras"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:text="Tamanho do Texto"
+                android:textColor="@color/letras"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt8" />
+
+            <ImageButton
+                android:id="@+id/aumenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aumenta"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <ImageButton
+                android:id="@+id/diminui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diminui"
+                app:layout_constraintEnd_toEndOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

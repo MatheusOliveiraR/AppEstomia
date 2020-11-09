@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".Will">
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fundo_passo" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/abc_vector_test" />
+
+    <ImageView
+        android:id="@+id/willFoto"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/will"
+        app:layout_constraintEnd_toEndOf="@+id/imageView62"
+        app:layout_constraintStart_toStartOf="@+id/imageView62"
+        app:layout_constraintTop_toTopOf="@+id/imageView62" />
+
+    <TextView
+        android:id="@+id/WillNome"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Williamson Silva"
+        android:textAlignment="center"
+        android:textColor="@color/letras"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView62"
+        app:layout_constraintStart_toStartOf="@+id/imageView62"
+        app:layout_constraintTop_toBottomOf="@+id/willFoto" />
+
+    <TextView
+        android:id="@+id/WillEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="williamson.silva@unespar.edu.br"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/WillNome"
+        app:layout_constraintStart_toStartOf="@+id/WillNome"
+        app:layout_constraintTop_toBottomOf="@+id/WillNome" />
+
+    <ScrollView
+        android:layout_width="295dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView62"
+        app:layout_constraintEnd_toEndOf="@+id/imageView62"
+        app:layout_constraintStart_toStartOf="@+id/imageView62"
+        app:layout_constraintTop_toBottomOf="@+id/WillEmail"
+        app:layout_constraintVertical_bias="0.24000001">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView117"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Doutor e Mestre em Informática pelo Programa de Pós-Graduação em Informática da Universidade Federal do Amazonas (UFAM). Graduado em Análise e Desenvolvimento de Sistemas pelo Instituto Federal de Educação, Ciência e Tecnologia de Roraima/ Campus Boa Vista. Possui curso Técnico em Informática, com ênfase em Programação em Computadores, pela Escola Tecnológica do Estado do Pará / Itaituba. Atualmente é professor colaborador da Universidade Estadual do Paraná (UNESPAR). Tem interesse nas áreas de Modelos de Análise e Projeto, Modelos de Tarefas, Modelos de Interação, Modelagem de Software, Ensino de Modelagem de Software, UML, Gamification, Informática na Educação, Projeto e Avaliação de Usabilidade e User eXperience, Integração entre as áreas de Engenharia de Software e Interação Humano-Computador, Qualidade de Software e Engenharia de Software Experimental."
+                android:textColor="@color/letras"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

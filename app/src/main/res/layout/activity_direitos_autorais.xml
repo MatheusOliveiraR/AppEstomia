@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".direitosAutorais">
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageView
+        android:id="@+id/imageView58"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voltar"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fundo_passo" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/textView103"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:text="Ícone vetor criado por freepik - br.freepik.com"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView58"
+        app:layout_constraintStart_toStartOf="@+id/imageView58"
+        app:layout_constraintTop_toBottomOf="@+id/textView123" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/textView104"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Negócio vetor criado por freepik - br.freepik.com"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView103"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/textView103"
+        app:layout_constraintTop_toBottomOf="@+id/textView103" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/textView105"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Fundo vetor criado por freepik - br.freepik.com"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView104"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/textView104"
+        app:layout_constraintTop_toBottomOf="@+id/textView104" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/textView106"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="Negócio vetor criado por rawpixel.com - br.freepik.com"
+        android:textAlignment="center"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView105"
+        app:layout_constraintStart_toStartOf="@+id/textView105"
+        app:layout_constraintTop_toBottomOf="@+id/textView105" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/textView107"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Projeto vetor criado por macrovector_official - br.freepik.com"
+        android:textAlignment="center"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView106"
+        app:layout_constraintStart_toStartOf="@+id/textView106"
+        app:layout_constraintTop_toBottomOf="@+id/textView106" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/textView118"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="https://github.com/denzcoskun/ImageSlideshow"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView107"
+        app:layout_constraintStart_toStartOf="@+id/textView107"
+        app:layout_constraintTop_toBottomOf="@+id/textView107" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/textView121"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="https://github.com/hdodenhof/CircleImageView"
+        android:textAlignment="center"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView118"
+        app:layout_constraintStart_toStartOf="@+id/textView118"
+        app:layout_constraintTop_toBottomOf="@+id/textView118" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/textView122"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="https://github.com/amilcar-sr/JustifiedTextView"
+        android:textAlignment="center"
+        android:textColor="@color/letras"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView121"
+        app:layout_constraintStart_toStartOf="@+id/textView121"
+        app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/textView123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Direitos Autorais"
+        android:textColor="@color/letras"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView58"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/imageView58"
+        app:layout_constraintTop_toTopOf="@+id/imageView58" />
+</androidx.constraintlayout.widget.ConstraintLayout>

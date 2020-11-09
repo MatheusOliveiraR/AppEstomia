@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:background="#fefbec"
+     tools:context=".passotirarbolsa">
+
+     <androidx.constraintlayout.widget.Guideline
+         android:id="@+id/guideline4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         app:layout_constraintGuide_percent="0.5" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fundo_passo" />
+
+    <ImageView
+        android:id="@+id/dicas2"
+        android:elevation="10dp"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:srcCompat="@drawable/dicaslam" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.85">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/slider2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:iss_corner_radius="5"
+                app:layout_constraintEnd_toEndOf="@+id/slider1"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@+id/slider1"
+                app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retirando a bolsa de uma peça"
+                android:textAlignment="center"
+                android:textColor="@color/letras"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:elevation="10dp"
+                android:id="@+id/slider1"
+                app:iss_corner_radius="5"
+                android:layout_width="295dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 1"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/slider1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/slider1"
+                app:layout_constraintTop_toBottomOf="@+id/slider1" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt18"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Retire a bolsa devagar, usando um pano macio e molhado em água limpa (fervida),  começando pela base adesiva  e no sentido do crescimento dos pelos na pele.​​ "
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt17"
+                app:layout_constraintTop_toBottomOf="@+id/txt17" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 2"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/txt18"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt18"
+                app:layout_constraintTop_toBottomOf="@+id/txt18" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txt20"
+                android:layout_width="295dp"
+                android:layout_height="match_parent"
+                android:text="Levante a borda da bolsa com uma mão e ao mesmo tempo pressione a pele da barriga perto da base adesiva com a outra mão. "
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt18"
+                app:layout_constraintStart_toStartOf="@+id/txt19"
+                app:layout_constraintTop_toBottomOf="@+id/txt19" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="300dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt20"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/divisao_cinza" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retirando a bolsa de duas peças"
+                android:textAlignment="center"
+                android:textColor="@color/letras"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/titulo"
+                app:layout_constraintStart_toStartOf="@+id/titulo"
+                app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 1"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txt17"
+                app:layout_constraintTop_toBottomOf="@+id/slider2" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt21"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Retire o clipe na parte inferior da bolsa e esvazie-a  no vaso sanitário ou fossa."
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/txtt20"
+                app:layout_constraintTop_toBottomOf="@+id/txtt20" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 2"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtt20"
+                app:layout_constraintTop_toBottomOf="@+id/txtt21" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt23"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Desconecte o coletor da placa colada ao corpo."
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/txtt22"
+                app:layout_constraintTop_toBottomOf="@+id/txtt22" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passo 3"
+                android:textColor="@color/letras"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtt23"
+                app:layout_constraintTop_toBottomOf="@+id/txtt23" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/txtt25"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Utilizando um pano macio e molhado em água limpa (fervida), retire delicadamente a placa  pressionando a pele com uma mão e, ao mesmo tempo, soltando a placa adesiva com a outra mão."
+                android:textColor="@color/letras"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/txtt24"
+                app:layout_constraintTop_toBottomOf="@+id/txtt24" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="Tamanho do Texto"
+                android:textColor="@color/letras"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtt25"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="@+id/txtt25"
+                app:layout_constraintTop_toBottomOf="@+id/txtt25" />
+
+            <ImageButton
+                android:id="@+id/aumenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                android:background="@drawable/aumenta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <ImageButton
+                android:id="@+id/diminui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diminui"
+                app:layout_constraintEnd_toEndOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_baseline_arrow_forward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:theme="@style/ProgressBarStyle"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/progressBar2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:theme="@style/ProgressBarStyle"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar3"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/progressBar3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        android:visibility="gone"
+        android:theme="@style/ProgressBarStyle"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="84dp"
+        app:layout_constraintBottom_toBottomOf="@+id/next"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintTop_toTopOf="@+id/next"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f4dd"
+    tools:context=".SelecionarPassoVideo">
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#f2d0b1" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passo a Passo"
+        android:textColor="@color/letras"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <ImageButton
+        android:elevation="10dp"
+        android:id="@+id/button10"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_passos"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+    <ImageButton
+        android:elevation="10dp"
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_passos"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <TextView
+        android:elevation="1dp"
+        android:id="@+id/textView41"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:text="Como tirar a bolsa coletora?"
+        android:textAlignment="center"
+        android:textColor="@color/letras"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="@+id/button10"
+        app:layout_constraintTop_toTopOf="@+id/button10"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Como limpar a pele ao redor da estomia?"
+        android:textAlignment="center"
+        android:textColor="@color/letras"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ImageButton
+        android:id="@+id/button11"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_passos"
+        android:elevation="10dp"
+        android:text="Como limpar a pele ao redor da estomia?"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/button10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Como tirar a bolsa coletora?"
+        android:textColor="@color/letras"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/textView41"
+        app:layout_constraintStart_toEndOf="@+id/imageView70"
+        app:layout_constraintTop_toTopOf="@+id/button10" />
+
+    <TextView
+        android:id="@+id/textView108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Como limpar ao redor da estomia?"
+        android:textColor="@color/letras"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintStart_toEndOf="@+id/imageView71"
+        app:layout_constraintTop_toTopOf="@+id/button11" />
+
+    <TextView
+        android:id="@+id/textView125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Como colocar a bolsa coletora?"
+        android:textColor="@color/letras"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button12"
+        app:layout_constraintEnd_toEndOf="@+id/button12"
+        app:layout_constraintStart_toEndOf="@+id/imageView72"
+        app:layout_constraintTop_toTopOf="@+id/button12" />
+
+    <ImageView
+        android:id="@+id/imageView70"
+        android:layout_width="30dp"
+        android:elevation="10dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/textView41"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button10"
+        app:layout_constraintTop_toTopOf="@+id/button10"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/circulo" />
+
+    <TextView
+        android:id="@+id/textView126"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="1"
+        android:textSize="18dp"
+        android:elevation="10dp"
+        android:textColor="@color/letras"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+        app:layout_constraintEnd_toEndOf="@+id/imageView70"
+        app:layout_constraintStart_toStartOf="@+id/imageView70"
+        app:layout_constraintTop_toTopOf="@+id/imageView70" />
+
+    <ImageView
+        android:id="@+id/imageView71"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button11"
+        app:layout_constraintTop_toTopOf="@+id/button11"
+        app:srcCompat="@drawable/circulo" />
+
+    <TextView
+        android:id="@+id/textView127"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/letras"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView71"
+        app:layout_constraintEnd_toEndOf="@+id/imageView71"
+        app:layout_constraintStart_toStartOf="@+id/imageView71"
+        app:layout_constraintTop_toTopOf="@+id/imageView71" />
+
+    <ImageView
+        android:id="@+id/imageView72"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button12"
+        app:layout_constraintEnd_toEndOf="@+id/button12"
+        android:elevation="10dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button12"
+        app:layout_constraintTop_toTopOf="@+id/button12"
+        app:srcCompat="@drawable/circulo" />
+
+    <TextView
+        android:id="@+id/textView128"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textStyle="bold"
+        android:textColor="@color/letras"
+        android:textSize="18dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView72"
+        app:layout_constraintEnd_toEndOf="@+id/imageView72"
+        app:layout_constraintStart_toStartOf="@+id/imageView72"
+        app:layout_constraintTop_toTopOf="@+id/imageView72" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
